@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.main {
+   display: flex; 
+   padding: 30px 30px 30px 30px;
+}
+
+
+/* Bots container  */
+.bots-container {
+    flex: 25%;
+    background-color: #edf2f1;
+}
+
+.user-name-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+}
+
+.user-name {
+    font-size: 25px;
+    color: #0c0b6b;
+    font-weight: 600; 
+}
+
+.fa-pencil {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.choose-bots-container {
+    margin-top: 40px;
+}
+
+.choose-bots-container h1 {
+    text-align: center;
+    color: #0c0b6b;
+}
+
+.bot-names-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bot-1, .bot-2 {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 40px;
+    background-color: #abeb09;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.bot-2 {
+    background-color: #edf2f1;
+}
+
+.img-container {
+    width: 70px;
+    height: 70px;
+    
+}
+
+.eli-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+.eli-name {
+    font-size: 2.5rem;
+    color: #ed071e;
+}
+
+/* Messeges Container  */
+.messeges-container-for-eli {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 60%;
+    /* display: none;   */
+    display: inline-block;
+}
+
+.messeges-container-for-elo {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: none; 
+}
+
+.messeges-header {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.header-img-container {
+    width: 70px;
+    height: 70px;
+    align-items: center;
+}
+
+.header-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+.header-name {
+    font-size: 2.5rem;
+    color: #ed071e;
+}
+
+.fa-circle {
+    align-self: center;
+    padding-bottom: 7px;
+    color: green;
+    animation: activeStatus;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+.main-messeges-container-for-eli, .main-messeges-container-for-elo {
+    width: 100%;
+    height: 70vh;
+    margin-top: 30px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bot-messege-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.messege-img-container {
+    width: 6%;
+    height: 40px;
+}
+
+.bot-div-for-messege {
+    max-width: 70%;
+    padding-top: 5px;
+}
+
+.bot-messege {
+    border-radius: 10px;
+    padding: 2px;
+    background-color: #8b9493;
+    word-wrap: break-word;
+}
+
+.messege-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+.user-messege-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.user-img-container {
+    width: 6%;
+    height: 40px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.user-img {
+    font-size: 35px;
+    text-align: center;
+}
+
+.user-div-for-messege {
+    max-width: 70%;  
+    padding-top: 10px;
+}
+
+.user-messege {
+    border-radius: 10px;
+    padding: 2px;
+    background-color: rgb(0, 132, 255);
+    word-wrap: break-word;
+}
+
+
+
+/* User Container  */
+.user-info-container-for-eli {
+    flex: 25%;
+    background-color: #edf2f1;
+    /* display: none;   */
+}
+
+.user-info-container-for-elo {
+    flex: 25%;
+    background-color: #edf2f1;
+    display: none; 
+}
+
+.info-img-container {
+    width: 220px;
+    height: 220px;
+    margin: auto;
+    margin: 60px;
+}
+
+.info-img {
+    width: 100%;
+    height: 100%;
+}
+
+.info-name {
+    text-align: center;
+    margin-top: -40px;
+    font-size: 2.5rem;
+    color: #ed071e;
+}
+
+.just-bot {
+    text-align: center;
+    color: blue;
+}
+
+.input-and-button {
+    display: flex;
+    gap: 20px;
+}
+
+.eli-input, .elo-input {
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.fa-paper-plane {
+    width: 10%;
+    margin-top: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* KEYFRAMES  */
+@keyframes activeStatus {
+    from {
+      color: white;
+    }
+  
+    to {
+      color: green;
+    }
+  }
